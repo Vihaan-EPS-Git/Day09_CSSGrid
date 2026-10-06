@@ -67,6 +67,12 @@ nav a.active {
     padding: 30px;
 }
 
+.main1 video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
 .main2 {
     grid-row: 4;
     grid-column: 1 / span 2;
