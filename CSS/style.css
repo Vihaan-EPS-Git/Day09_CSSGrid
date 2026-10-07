@@ -20,17 +20,13 @@ nav a {
     display: block;
 }
 
-/* Hover effect */
 nav a:hover {
     background-color: #575757;
 }
 
-/* Active (current page) link */
 nav a.active {
     background-color: #04AA6D;
-    /* a green highlight */
     font-weight: bold;
-    /* make it stand out */
 }
 
 .grid-container {
@@ -83,4 +79,133 @@ nav a.active {
     grid-row: 5 / span 2;
     grid-column: 1;
     padding: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+.marine-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.2fr;
+    grid-template-rows: auto 320px 220px 180px;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.marine-nav-slot {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.marine-feature-dark {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    background-color: #34435e;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marine-feature-dark h1 {
+    color: #7bc4a8;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.marine-image-banner {
+    grid-column: 3;
+    grid-row: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('Images/images.jpg') center/cover;
+    border-radius: 4px;
+}
+
+.marine-middle-content {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.marine-action-box {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #dfcaa2;
+    color: #000000;
+    text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.marine-action-box {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #dfcaa2;
+    padding: 0;
+    display: flex;
+}
+
+.marine-action-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #385a4d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+}
+
+.marine-action-link:hover,
+.marine-action-link:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.marine-bottom-section {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    background-color: #7bc4a8;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marine-bottom-section h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+.marine-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
 }
